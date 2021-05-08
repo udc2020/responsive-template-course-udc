@@ -1,0 +1,413 @@
+
+/*
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 2.5 License
+*/
+
+*::after,*::before,*,body,h1, h2, h3{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html{
+	font-size: 16px;
+}
+body {
+	background: #000000 url(images/img01.jpg) repeat-x left top;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: .8rem;
+	color: #63676A;
+}
+
+h1, h2, h3 {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-weight: normal;
+	color: #649632;
+}
+
+h1 { font-size: 2.75rem; }
+
+h2 { font-size: 1.25rem; }
+
+
+p, ul, ol {
+	line-height: 240%;
+	text-align: justify;
+}
+
+
+
+a { color: #C2C8CC; }
+
+a:hover { text-decoration: none; }
+
+a img {
+	border: none;
+}
+
+
+hr { display: none; }
+
+.list1 {
+	display: flex;
+}
+
+.list1 li {
+	line-height: normal;
+}
+
+.list1 li img {
+	margin: 0 1.75em 1.75em 0;
+}
+
+.list1 li.alt img {
+	margin-right: 0;
+}
+
+#wrapper {
+	width: 50%;
+	margin: 0 auto;
+	background: #000000;
+	padding: 0 1em;
+}
+
+/* Header */
+
+
+#header {
+	width: 100%;
+	height: 2.75em;
+	margin: 0 auto;
+	background: url(images/img03.jpg) repeat-x left top;
+	display: flex;
+	justify-content: space-between;
+}
+
+/* Menu */
+
+#menu {
+	height: 44px;
+}
+
+#menu ul {
+	list-style: none;
+	line-height: normal;
+}
+
+#menu li {
+	height: 2.8em;
+	display: inline-flex;
+	padding: .7em 1.25em  0 1.25em;
+	background: url(images/img04.jpg) no-repeat right 8px;
+}
+
+#menu a {
+	text-decoration: none;
+	font-size: .8rem;
+	color: #FFFFFF;
+}
+
+#menu a:hover { text-decoration: underline; }
+
+#menu .current_page_item {
+	color: #FFFFFF;
+}
+
+/* Search */
+
+#search {
+	height: 2.95em;
+}
+
+#search form {
+	padding: .7em  1.2em 0 0;
+}
+
+#search fieldset {
+	border: none;
+}
+
+#search input {
+	height: 1.2em;
+	border: none;
+}
+#search fieldset {
+	display: flex;
+	align-items: center;
+}
+
+#search-text {
+	width: 9em;
+	height: .8em;
+	margin: 0 .4em 0 0;
+	padding: .39em 0 0 .41em;
+	color: #658453;
+}
+
+#search-submit {
+	height: .8em;
+	margin-left: 4px;
+	color: #39561D;
+}
+
+/* Page */
+
+#page {
+	width: 100%;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: 30% 62%;
+	grid-column-gap: 5%;
+}
+
+/** LOGO */
+
+#logo {
+	width: 100%;
+	height: 19em;
+	margin: 0 auto;
+	background: url(images/img05.jpg) no-repeat left top ;
+	object-fit: cover;
+	padding:2em;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+}
+
+#logo h1, #logo p em {
+	line-height: normal;
+	text-align: left;
+}
+
+#logo h1 {
+	display: block;
+	
+}
+
+#logo h1 a {
+	text-decoration: none;
+	text-transform: lowercase;
+	color: #FFFFFF;
+}
+
+#logo h1 a:hover { text-decoration: underline; }
+
+#logo p {
+	padding-top: .5em;
+	font: italic 13px Georgia, "Times New Roman", Times, serif;
+	color: #FFFFFF;
+}
+
+#logo p a {
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+#logo p a:hover { text-decoration: underline; }
+
+/* Content */
+
+
+
+/* Post */
+
+.post {
+	margin-bottom: 1.5em;
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	grid-template-rows: 5em auto;
+}
+
+.post .title {
+	margin-bottom: 3px;
+	
+	font-family: Arial, Helvetica, sans-serif;
+	color: #FFFFFF;
+	align-self: center;
+}
+
+.post .date {
+
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-weight: normal;
+	font-size: 1.2em;
+	color: #C2C8CC;
+	text-align: right;
+}
+
+
+.post .entry {
+	padding:1.4em 0;
+	grid-column: 1/3;
+	border-top: 1px dashed #1E1E1E;
+}
+
+/* .post .links {
+	margin: 0 250px 0 0;
+} */
+
+
+.post .links .permalink {
+	padding-left: 17px;
+}
+
+/* Sidebar */
+
+#sidebar {
+	height: auto;
+}
+
+#sidebar ul {
+	list-style: none;
+	line-height: normal;
+}
+
+#sidebar li {
+	margin-bottom:1.9em;
+	padding: 0 0 20px 0px;
+	background: url(images/img07.jpg) repeat-x left top;
+}
+
+#sidebar li ul {
+	line-height: 200%;
+	background: none;
+}
+
+#sidebar li li {
+	margin: 0;
+	padding: 3px 20px;
+	background: none;
+}
+
+#sidebar p {
+	margin: 0;
+	padding: 0 20px;
+}
+
+#sidebar h2 {
+	height: 33px;
+	margin: 0 0 20px 0px;
+	padding: 15px 0px 0px 20px;
+	background: url(images/img06.jpg) repeat-x left top;
+	text-transform: uppercase;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+
+
+#sidebar p {
+	line-height: 200%;
+	padding-bottom: 20px;
+}
+
+
+/* Calendar */
+
+
+#calendar caption {
+	padding-bottom: 5px;
+	font-weight: bold;
+}
+
+#calendar table {
+	width: 100%;
+	border-collapse: collapse;
+	border-right: 1px solid #F5F2EF;
+}
+
+#calendar thead th {
+	padding: 5px 0;
+	text-align: center;
+	border-top: 1px solid #F5F2EF;
+	border-left: 1px solid #F5F2EF;
+	background: #F5F2EF;
+}
+
+#calendar tbody td {
+	padding: 5px 0;
+	text-align: center;
+	border-top: 1px solid #F5F2EF;
+	border-left: 1px solid #F5F2EF;
+}
+
+#calendar tfoot td {
+	padding: 5px;
+}
+
+#calendar tfoot #next {
+	text-align: right;
+}
+
+#calendar #today {
+	background: #E7F1E1;
+}
+
+/* Footer */
+
+#footer {
+	width: 100%;
+	margin: 0 auto;
+	padding: 0;
+	background: url(images/img02.jpg) repeat-x left top;
+	height: 61px;
+}
+
+#footer p {
+	margin: 0;
+	padding: 20px 0;
+	text-align: center;
+	line-height: normal;
+	color: #FFFFFF;
+}
+
+/* media quiry */
+
+@media  all and (max-width:1130px) {
+	#wrapper {
+		width: 80%;
+		padding: 0 1em;
+
+	}
+
+}
+
+
+@media  all and (max-width:796px) {
+	#wrapper {
+		width: 100%;
+		padding: 0 1em;
+
+	}
+	#header {
+		width: 100%;
+		height: auto;
+		display: flex;
+		flex-direction: column;
+	}
+	#search {
+		width: 100%;
+	}
+	#search fieldset>*{
+		width: 100%;
+	}
+	#page {
+		width: 100%;
+		display: grid;
+		grid-template-columns: 1fr;
+	}
+	#sidebar{
+		grid-row: 2;
+	}
+	#menu {
+		height: auto;
+		display: flex;
+		justify-content: center;
+	}
+	
+	
+}
+
